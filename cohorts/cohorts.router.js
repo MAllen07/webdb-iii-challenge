@@ -63,7 +63,7 @@ router.get("/:id/students", (req, res) => {
     });
 });
 
-// Post.
+// Post
 router.post("/", (req, res) => {
   if (!req.body.name) {
     res
@@ -89,7 +89,7 @@ router.post("/", (req, res) => {
   }
 });
 
-// Update. **Postman Tested: **
+// Update
 router.put("/:id", (req, res) => {
   db("cohorts")
     .where({ id: req.params.id })

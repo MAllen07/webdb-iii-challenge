@@ -8,7 +8,7 @@ exports.up = function (knex, Promise) {
       .notNullable()
       .unique();
     tbl
-      .integer("cohorts_id")
+      .integer("students_id")
       .unsigned()
       .references("id")
       .inTable("cohorts")
