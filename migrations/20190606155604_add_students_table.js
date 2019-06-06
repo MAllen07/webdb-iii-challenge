@@ -8,6 +8,7 @@ exports.up = function(knex, Promise) {
       .string("name", 128)
       .integer("role_id")
       .notNullable()
+
       .unique();
 
     // Syntax for a foreign key
