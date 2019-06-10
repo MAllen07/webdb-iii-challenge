@@ -3,8 +3,8 @@ const helmet = require("helmet");
 
 const server = express();
 
-const cohortsRouter = require("./cohorts/cohorts-router.js");
-const studentsRouter = require("./students/students-router.js");
+const cohortsRouter = require("./cohorts/cohorts.router");
+const studentsRouter = require("./students/student-router");
 
 server.use(helmet());
 server.use(express.json());
